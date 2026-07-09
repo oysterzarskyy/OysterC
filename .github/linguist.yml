@@ -1,0 +1,4 @@
+overrides:
+  - files:
+      - "**/*.oy"
+    language: C

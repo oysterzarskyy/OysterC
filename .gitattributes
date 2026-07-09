@@ -1,0 +1,3 @@
+*.oy linguist-language=C
+*.oy linguist-detectable=true
+*.c linguist-language=C

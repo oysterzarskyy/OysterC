@@ -1,0 +1,14 @@
+Possible C/C++ UI integration targets:
+- GTK3/GTK4 via gtk/gtk.h
+- Qt via Qt Widgets / Qt Quick
+- wxWidgets via wx/wx.h
+- FLTK via FL/Fl.H
+- Raylib via raylib.h
+- SDL2 via SDL.h
+- Dear ImGui via imgui.h
+
+OysterC can wrap these as backend plugins, but the primary native library remains library/oyster/libs/ui/oysterc-ui.c.
+
+Added local prototype:
+- library/libs/ui/dear-imgui-like.c: a from-scratch Dear ImGui-inspired module for OysterC-style UI composition.
+- library/libs/ui/oysterc-import-options.txt: a possible import syntax such as import { ui, raylib, oysterui } from oysterc;

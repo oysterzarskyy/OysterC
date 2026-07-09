@@ -1,0 +1,9 @@
+module app
+
+class MainActivity {
+    fun onCreate() {
+        print("Android activity created")
+    }
+}
+
+print("Android build target ready")

@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.oysterc'
+version = '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+tasks.register('compileOyster') {
+    doLast {
+        println 'OysterC build step placeholder for Gradle integration'
+    }
+}

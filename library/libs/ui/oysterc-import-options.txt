@@ -1,0 +1,4 @@
+Possible OysterC import style:
+import { ui, raylib, oysterui } from oysterc;
+
+This suggests a future module system where OysterC can compose UI and rendering backends from a single import statement.

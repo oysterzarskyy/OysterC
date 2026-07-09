@@ -1,0 +1,10 @@
+program        = { statement } ;
+statement      = variable_decl | function_decl | class_decl | module_decl | expression_stmt | try_stmt ;
+variable_decl  = ("let" | "const") IDENT [":" type] "=" expression ;
+function_decl  = "fun" IDENT "(" [ parameters ] ")" [ ":" type ] block ;
+class_decl     = "class" IDENT [ "(" [ parameters ] ")" ] block ;
+module_decl    = "module" IDENT block ;
+try_stmt       = "try" block { "catch" IDENT block } [ "finally" block ] ;
+expression     = IDENT | STRING | NUMBER | call_expr | binary_expr ;
+call_expr      = IDENT "(" [ arguments ] ")" ;
+block          = "{" { statement } "}" | NEWLINE INDENT { statement } DEDENT ;

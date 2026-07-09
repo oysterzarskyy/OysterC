@@ -1,0 +1,4 @@
+bash {
+  echo "Hello from Bash"
+}
+print("bash automation example")

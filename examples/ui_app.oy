@@ -1,0 +1,10 @@
+import "std.ui" as ui;
+
+fun main() {
+    const my_app = ui.Window("OysterC App")
+        ui.VBox()
+            ui.Text("Welcome to OysterC!")
+            ui.Button("Click Me")
+                fun onClick()
+                    ui.alert("Pearl harvested!");
+}

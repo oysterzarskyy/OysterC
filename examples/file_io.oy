@@ -1,0 +1,2 @@
+write_file("/tmp/oysterc_demo.txt", "hello from oyster")
+print("wrote file")
