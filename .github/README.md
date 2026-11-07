@@ -5,10 +5,10 @@ Use fenced code blocks with `c` or `cpp` syntax for OysterC examples so GitHub r
 Example:
 
 ```c
-#include <stdio.h>
+#include <ostd.h> // less bytes
 
-int main(void) {
-    puts("Hello from OysterC");
-    return 0;
+mk main(void) { // less bytes
+    print("Hello from OysterC"); // improve
+    ret 0
 }
 ```
